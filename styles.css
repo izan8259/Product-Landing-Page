@@ -1,0 +1,128 @@
+body {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  
+  .flex-container {
+    display: flex;
+    background-color: white;
+    
+  }
+  
+  #div1 {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }  
+  
+  #div2 {
+    display: flex;
+    width: 33%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #div3 {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  #header {
+    position: fixed;
+    top: 0%;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li{
+     display: inline-flex;
+     padding: 15px 25px;
+     cursor: pointer;
+  }
+  
+  ul li a{
+    color: black;
+    text-decoration: none;
+  }
+  
+  #header-img{
+    width: 25%;
+    margin-top: 15px;
+  }
+  
+  input {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 10px;
+    width: 175px;
+  }
+  
+  #submit {
+    border-radius: 30px;
+    width: 75px;
+    background-color: white;
+    color: black;
+  }
+  
+  h1 {
+    padding-top: 10%;
+    text-align: center;
+  }
+  
+  .text {
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 27%;
+    margin-bottom: 5%;
+  }
+  
+  #video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #source {
+    text-align: center;
+  }
+  
+  @media (max-width: 1000px){
+    .text {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+  
+  @media (max-width: 900px){
+    .flex-container{
+      flex-direction: column;
+    }
+    #div1, #div2, #div3 {
+      width: 100%;
+      height: 0%;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      margin-top: 25%;
+    }
+  }
+  
+  @media (max-width: 700px){
+    header {
+      flex-wrap: wrap;
+    }
+    h1{
+      margin-top: 40%;
+    }
+    .text {
+      margin: 0 0;
+    }
+  }
