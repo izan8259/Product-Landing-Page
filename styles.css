@@ -44,7 +44,6 @@ body {
   ul li{
      display: inline-flex;
      padding: 15px 25px;
-     cursor: pointer;
   }
   
   ul li a{
