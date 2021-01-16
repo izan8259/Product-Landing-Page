@@ -1,19 +1,23 @@
-body {
-    padding-top: 0px;
-    margin-top: 0px;
+  html {
+    display: flex;
   }
   
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
   .flex-container {
     display: flex;
-    background-color: white;
-    
+    position: fixed;
+    width: 100%;
   }
   
   #div1 {
     width: 33%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
   }  
   
   #div2 {
@@ -27,7 +31,7 @@ body {
     width: 33%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
   }
   
   #header {
@@ -38,27 +42,29 @@ body {
   ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
   }
   
   ul li{
      display: inline-flex;
-     padding: 15px 25px;
+     padding: 15px 30px;
   }
   
   ul li a{
-    color: black;
+    color: white;
     text-decoration: none;
+    font-size: 1.40rem;
+    font-weight: 600;
   }
   
   #header-img{
-    width: 25%;
+    width: 20%;
     margin-top: 15px;
   }
   
   input {
     border-radius: 25px;
     border: 2px solid black;
+    color: black;
     padding: 10px;
     width: 175px;
   }
@@ -70,16 +76,51 @@ body {
     color: black;
   }
   
-  h1 {
-    padding-top: 10%;
-    text-align: center;
-  }
+  .backdrop1 {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    align-items: center;
   
+    
+  }
+
+  .backdrop1 img {
+    width: 100%;
+    background-size: cover;
+  }
+
+  h1 {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    font-size: 225%;
+    color: black;
+    text-align: center;
+
+  }
+
   .text {
-    margin-top: 5%;
-    margin-left: 30%;
-    margin-right: 27%;
-    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(101, 97, 71, 0.2);
+    color: black;
+    padding-top: 8%;
+    padding-bottom: 8.5%;
+  }
+
+  .box {
+    width: 33%;
+    padding-right: 2%;
+  }
+
+  .quality-box {
+    margin-left: 15%
+  }
+
+  .third-box {
+    margin-right: 15%;
   }
   
   #video {
@@ -87,19 +128,32 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .box h2 {
+    text-align: center;
+    font-size: 1.40rem;
+  }
   
+  .box p {
+    font-size: 1.15rem;
+  }
+ 
+  #shop {
+    background: #959ea3;
+    padding: 6% 0;
+  }
+
   #source {
     text-align: center;
   }
   
-  @media (max-width: 1000px){
-    .text {
-      margin-left: 10%;
-      margin-right: 10%;
+  @media (max-width: 1000px) {
+    .text{
+      padding: 0 2%;
     }
   }
   
-  @media (max-width: 900px){
+  @media (max-width: 1100px){
     .flex-container{
       flex-direction: column;
     }
@@ -110,7 +164,26 @@ body {
       justify-content: center;
     }
     h1 {
-      margin-top: 25%;
+      margin-top: 10%;
+    }
+    .backdrop1 img {
+      width: 400%;
+      margin-left: -48%;
+    }
+  }
+
+  @media (max-width: 860px){
+    .backdrop1 img {
+      width: 400%;
+      margin-left: -100%;
+    }
+    .quality-box {
+      margin-left: 2%;
+    }
+  
+    .third-box {
+      margin-right: 2%;
+      padding-right: 0;
     }
   }
   
@@ -139,4 +212,17 @@ body {
     .text p{
       font-size: 150%;
     }
+    .backdrop1 img {
+      width: 400%;
+      margin-left: -100%;
+    }
+    .quality-box {
+      margin-left: 2%;
+    }
+  
+    .third-box {
+      margin-right: 2%;
+      padding-right: 0;
+    }
   }
+
