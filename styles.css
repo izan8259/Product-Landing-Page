@@ -11,6 +11,8 @@
     display: flex;
     position: fixed;
     width: 100%;
+    background: #75868e;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
   }
   
   #div1 {
@@ -39,23 +41,27 @@
     top: 0%;
   }
   
-  ul {
+  #nav-bar ul {
     list-style-type: none;
     padding: 0;
   }
   
-  ul li{
+  #nav-bar ul li{
      display: inline-flex;
      padding: 15px 30px;
   }
   
-  ul li a{
+  #nav-bar ul li a{
     color: white;
     text-decoration: none;
     font-size: 1.40rem;
     font-weight: 600;
   }
-  
+
+  #nav-bar ul li a:hover{
+    color: rgba(255, 255, 255, 0.6);
+  }
+
   #header-img{
     width: 20%;
     margin-top: 15px;
@@ -81,8 +87,6 @@
     overflow: hidden;
     flex-direction: row;
     align-items: center;
-  
-    
   }
 
   .backdrop1 img {
@@ -97,7 +101,7 @@
     font-size: 225%;
     color: black;
     text-align: center;
-
+    
   }
 
   .text {
@@ -122,7 +126,20 @@
   .third-box {
     margin-right: 15%;
   }
-  
+
+  .icon {
+    display: flex;
+    justify-content: center;
+  }
+
+ i {
+    font-size: 2em;
+  }
+
+  i.fas:hover {
+    color: rgb(146, 141, 111);
+  }
+
   #video {
     display: block;
     margin-left: auto;
@@ -147,9 +164,99 @@
     text-align: center;
   }
   
+  #pricing {
+    background: #75868e;
+    padding: 6% 0;
+  }
+
+  .pricing-grid, .pricing-grid h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .pricing-box {
+    flex-direction: column;
+    border: 2px solid black;
+    
+  }
+
+  .pricing-box:hover {
+    box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .pricing-box h2 {
+    font-size: 1.6rem;
+    color: white;
+    background: #556972;
+    margin: 0;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  .pricing-box ol{
+    list-style-type: none;
+    padding: 0 0;
+    margin: 0;
+  }
+
+  .pricing-box li {
+    border-top: 1px solid black;
+    font-size: 1.3rem;
+    padding: 1rem 1rem;
+    text-align: center;
+  }
+
+  .buy-now-btn h2{
+    cursor: pointer;
+  }
+
+  .buy-now-btn h2:hover{
+    transform:scale(1.05); 
+  }
+
+  footer {
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+    background-color: rgba(101, 97, 71, 0.2);
+  }
+
+  footer ul{
+    list-style-type: none;
+  }
+
+  footer ul li{
+    display: inline-flex;
+    padding: 0 1rem;
+    float: left;
+  }
+
+  footer ul li a{
+    text-decoration: none;
+    color: black;
+  }
+
+  footer span {
+    float: right;
+    margin-right: 2.5rem;
+  }
+
+  footer ul li a:hover{
+    color: rgba(46, 11, 11, 0.4);
+  }
+
   @media (max-width: 1000px) {
     .text{
-      padding: 0 2%;
+      padding: 10% 2%;
+      height: 100vh;
+    }
+    .quality-box {
+      margin-left: 0%;
+    }
+    .third-box {
+      margin-right: 0%;
     }
   }
   
